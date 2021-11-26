@@ -1,7 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Apt.Unity.Projection.ProjectionCamera
+    - Apt.Unity.Projection.ProjectionPlane
     - TrackedImageInfoManager
+    - Tracking
     Unity.RenderPipelines.Core.Runtime.dll:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -39,6 +42,9 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.XRSystemData
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelinePreferences
+    - TimelineProjectSettings
     Unity.XR.ARCore.Editor.dll:
     - UnityEditor.XR.ARCore.ARCoreSettings
     Unity.XR.ARCore.dll:
@@ -52,6 +58,8 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
     - UnityEngine.XR.ARFoundation.ARTrackedImageManager
+    Unity.XR.ARKit.Editor.dll:
+    - UnityEditor.XR.ARKit.ARKitSettings
     Unity.XR.ARSubsystems.dll:
     - UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
     Unity.XR.Management.Editor.dll:
@@ -84,7 +92,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Image Replacement.unity:
+    Assets/Scenes/Off-Axis Demo.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -105,108 +113,122 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1616}
-    - Class: 114
-      Script: {instanceID: 1618}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1620}
     - Class: 114
       Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 1630}
+      Script: {instanceID: 1624}
     - Class: 114
-      Script: {instanceID: 1742}
+      Script: {instanceID: 1626}
     - Class: 114
-      Script: {instanceID: 1774}
+      Script: {instanceID: 1634}
     - Class: 114
-      Script: {instanceID: 2348}
+      Script: {instanceID: 1746}
     - Class: 114
-      Script: {instanceID: 2438}
+      Script: {instanceID: 1778}
     - Class: 114
-      Script: {instanceID: 3114}
+      Script: {instanceID: 2352}
     - Class: 114
-      Script: {instanceID: 3184}
+      Script: {instanceID: 2442}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3260}
+      Script: {instanceID: 3188}
+    - Class: 114
+      Script: {instanceID: 3246}
     - Class: 114
       Script: {instanceID: 3264}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3268}
     - Class: 114
-      Script: {instanceID: 3434}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3556}
+      Script: {instanceID: 3438}
     - Class: 114
-      Script: {instanceID: 3634}
+      Script: {instanceID: 3560}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3638}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 3844}
     - Class: 114
-      Script: {instanceID: 4208}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 4226}
+      Script: {instanceID: 4212}
     - Class: 114
-      Script: {instanceID: 4524}
+      Script: {instanceID: 4230}
     - Class: 114
-      Script: {instanceID: 4994}
+      Script: {instanceID: 4528}
     - Class: 114
-      Script: {instanceID: 5010}
+      Script: {instanceID: 4998}
     - Class: 114
-      Script: {instanceID: 5066}
+      Script: {instanceID: 5014}
     - Class: 114
-      Script: {instanceID: 5254}
+      Script: {instanceID: 5070}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 5258}
     - Class: 114
-      Script: {instanceID: 5276}
+      Script: {instanceID: 5260}
     - Class: 114
-      Script: {instanceID: 5514}
+      Script: {instanceID: 5280}
     - Class: 114
-      Script: {instanceID: 5622}
+      Script: {instanceID: 5518}
     - Class: 114
-      Script: {instanceID: 5642}
+      Script: {instanceID: 5626}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5646}
     - Class: 114
-      Script: {instanceID: 5822}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 5828}
+      Script: {instanceID: 5826}
     - Class: 114
-      Script: {instanceID: 5922}
+      Script: {instanceID: 5832}
     - Class: 114
-      Script: {instanceID: 5956}
+      Script: {instanceID: 5926}
     - Class: 114
-      Script: {instanceID: 5992}
+      Script: {instanceID: 5960}
     - Class: 114
-      Script: {instanceID: 6086}
+      Script: {instanceID: 5996}
     - Class: 114
-      Script: {instanceID: 6190}
+      Script: {instanceID: 6090}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 6158}
     - Class: 114
-      Script: {instanceID: 6362}
+      Script: {instanceID: 6196}
     - Class: 114
-      Script: {instanceID: 6448}
+      Script: {instanceID: 6332}
     - Class: 114
-      Script: {instanceID: 6496}
+      Script: {instanceID: 6368}
     - Class: 114
-      Script: {instanceID: 7046}
+      Script: {instanceID: 6454}
     - Class: 114
-      Script: {instanceID: 7096}
+      Script: {instanceID: 6502}
     - Class: 114
-      Script: {instanceID: 7400}
+      Script: {instanceID: 7052}
     - Class: 114
-      Script: {instanceID: 7630}
+      Script: {instanceID: 7102}
     - Class: 114
-      Script: {instanceID: 20246}
+      Script: {instanceID: 7406}
+    - Class: 114
+      Script: {instanceID: 7636}
+    - Class: 114
+      Script: {instanceID: 22462}
+    - Class: 114
+      Script: {instanceID: 22464}
+    - Class: 114
+      Script: {instanceID: 125866}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -536,12 +558,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
-  - hash:
-      serializedVersion: 2
-      Hash: 8860633d29a22ff64e02e18da3716cdf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityTemplateProjects
-    className: SimpleCameraController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -970,12 +986,6 @@ ScriptsOnlyBuild:
     className: ARTrackedObject
   - hash:
       serializedVersion: 2
-      Hash: 58e68364412c67eae2bdb4954be2dcc2
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Readme
-  - hash:
-      serializedVersion: 2
       Hash: 8d35f16c5022311c6f4d9432be73bfcf
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
@@ -1058,6 +1068,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackedImageInfoManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1324,11 +1340,60 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 73d5593d4ec6071e03fe82ca57d5db22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Apt.Unity.Projection
+    className: ProjectionPlane
+  - hash:
+      serializedVersion: 2
+      Hash: fd361c2f880f31b67692ecf831887779
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Apt.Unity.Projection
+    className: ProjectionCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 1794a6b27250b960bf71d9529dfdbf95
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TrackedImageInfoManager
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: d2c86aeafb3b4116b27e172353b5c2ff
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Virtual_Tracking
+  - hash:
+      serializedVersion: 2
+      Hash: 5b89243c337ce51834d1b0df7ca017ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoidSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 672844c126bb584d6c9001d710a45c78
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoidManager
+  - hash:
+      serializedVersion: 2
+      Hash: aeb69b57106280248cef86c4ab56e033
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Boid
+  - hash:
+      serializedVersion: 2
+      Hash: bf695554facd2c78d2dd7346d83e1988
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spawner
+  - hash:
+      serializedVersion: 2
+      Hash: b5b4cffc031df8b2e9ce7d632fcf907b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tracking
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Image Replacement.unity
-  playerPath: C:/Users/nikla/Desktop/Projects/Unity/New Unity Project/builds/AR-Replacement-Test.apk
+  - Assets/Scenes/Off-Axis Demo.unity
+  playerPath: C:/Users/nikla/Desktop/Projects/Unity/New Unity Project/builds/Off-Axis-AR
+    Test.apk
