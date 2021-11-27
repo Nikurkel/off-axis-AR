@@ -10,7 +10,9 @@ public class Tracking : MonoBehaviour
     void Update()
     {
         if (arPlane == null){
-            arPlane = GameObject.Find("tracking point").transform.parent.gameObject;
+            if (GameObject.Find("tracking point") != null){
+                arPlane = GameObject.Find("tracking point").transform.parent.gameObject;
+            }
         }else{
             float x = arCamera.transform.localPosition.x - arPlane.transform.localPosition.x;
             float y = arCamera.transform.localPosition.y - arPlane.transform.localPosition.y;

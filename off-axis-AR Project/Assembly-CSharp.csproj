@@ -36,18 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\ARCursor.cs" />
-     <Compile Include="Assets\Scripts\TrackedImageInfoManager.cs" />
-     <Compile Include="Assets\Scripts\off-axis\ProjectionPlane.cs" />
-     <Compile Include="Assets\Scripts\off-axis\ProjectionCamera.cs" />
-     <Compile Include="Assets\Scripts\Aquarium\BoidHelper.cs" />
-     <Compile Include="Assets\Scripts\Aquarium\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\Aquarium\Virtual_Tracking.cs" />
-     <Compile Include="Assets\Scripts\Aquarium\BoidSettings.cs" />
      <Compile Include="Assets\Scripts\Aquarium\BoidManager.cs" />
+     <Compile Include="Assets\Scripts\off-axis\ProjectionCamera.cs" />
+     <Compile Include="Assets\Scripts\Aquarium\BoidSettings.cs" />
      <Compile Include="Assets\Scripts\Aquarium\Boid.cs" />
      <Compile Include="Assets\Scripts\Aquarium\Spawner.cs" />
      <Compile Include="Assets\Scripts\off-axis\Tracking.cs" />
+     <Compile Include="Assets\Scripts\Aquarium\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\off-axis\ProjectionPlane.cs" />
+     <Compile Include="Assets\Scripts\ARCursor.cs" />
+     <Compile Include="Assets\Scripts\Aquarium\BoidHelper.cs" />
+     <Compile Include="Assets\Scripts\TrackedImageInfoManager.cs" />
+     <Compile Include="Assets\Scripts\Aquarium\Virtual_Tracking.cs" />
      <None Include="Assets\Materials\Raymarch.shader" />
      <None Include="Assets\Scripts\Aquarium\BoidCompute.compute" />
      <None Include="Assets\Materials\Mandelbrot.shader" />

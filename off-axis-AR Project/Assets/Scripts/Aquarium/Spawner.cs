@@ -25,7 +25,10 @@ public class Spawner : MonoBehaviour {
             boid.transform.forward = Random.insideUnitSphere;
             boid.transform.parent = boidHolder.transform;
 
-            boid.SetColour (colour);
+            Color c = new Color(Random.Range(0.3f, 0.7f), Random.Range(0.3f, 0.7f), Random.Range(0.3f, 0.7f));
+            boid.SetColour (c);
+            float size = boid.transform.localScale.x * Random.Range(0.7f, 1.3f);
+            boid.transform.localScale = new Vector3(size,size,size);
         }
     }
 
